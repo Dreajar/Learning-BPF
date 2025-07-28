@@ -19,6 +19,6 @@
 - The linux kernel alsos uses a JIT compiler for BPF instructions. The JIT will transform BPF bytecode into machine code after the program is verified, avoiding this overhead on execution time.
 - THis means you DON'T need to restart your system to load BPF programs; you can load them on demand and/or write your own init scripts that load BPF programs when your system starts.
 - Before the kernel runs any BPF program, it needs to know which execution point the program is attached to.
-- There are multiple attachment ponits in the kernel, which are defined by the BPF program types
-- When you choose an execution point, the kernel also gives you specific function helpers
-- BPF maps lets you share data between the kernel and user-space. They are bidirectional structures to share data, i.e., you can read/wrtite them from both sides
+- There are multiple attachment ponits in the kernel, which are defined by the BPF program types.
+- When you choose an execution point, the kernel also gives you specific function helpers.
+- BPF maps lets you share data between the kernel and user-space. They are bidirectional structures to share data, i.e., you can read/wrtite them from both sides.
